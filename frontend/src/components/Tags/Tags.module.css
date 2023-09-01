@@ -11,3 +11,7 @@
     font-weight: 600;
     color: blue;
 }
+
+.container a:hover{
+    transform: scale(1.05);
+}

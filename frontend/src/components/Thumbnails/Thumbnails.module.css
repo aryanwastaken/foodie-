@@ -7,6 +7,15 @@
     padding: 0;
   }
   
+  .list li:hover{
+    transform: scale(1.05);
+    
+  }
+
+  .list li{
+    transition: 250ms;
+  }
+
   .list li a {
     height: 22.5rem;
     width: 20rem;
