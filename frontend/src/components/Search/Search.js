@@ -12,7 +12,7 @@ export default function Search() {
     }
   return (
     <div className={classes.container}>
-        <input type='text' placeholder='Search Foodie!'
+        <input name='search' type='text' placeholder='Search Foodie!'
         onChange={e => setTerm(e.target.value)}
         onKeyUp={e => e.key === 'Enter' && search()} 
         defaultValue={searchTerm} />

@@ -1,15 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import classes from './header.module.css';
+import { useCart } from '../hooks/useCart';
 
 export default function Header() {
   const user = {
     name : 'royden',
   };
 
-  const cart = {
-    totalcount : 10,
-  };
+  const {cart} = useCart();
 
   const logout = ()=> {}
 
@@ -36,7 +35,7 @@ export default function Header() {
                     )}
                         <li>
                             <Link to="/cart">Cart 
-                            {cart.totalcount > 0 && <span className={classes.cart_count}>{cart.totalcount}</span>}
+                            {cart.totalCount > 0 && <span className={classes.cart_count}>{cart.totalCount}</span>}
                             </Link>
                         </li>
 
@@ -45,5 +44,5 @@ export default function Header() {
         </div>
     </header>
     );
-  
+
 }
