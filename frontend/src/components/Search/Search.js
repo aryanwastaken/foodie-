@@ -3,7 +3,7 @@ import classes from './Search.module.css';
 import { useNavigate, useParams } from 'react-router-dom';
 
 export default function Search() {
-    const [term, setTerm]= useState();
+    const [term, setTerm]= useState("");
     const navigate = useNavigate();
     const { searchTerm } = useParams();
     
