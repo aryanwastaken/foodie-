@@ -25,11 +25,20 @@
     padding: 1rem;
 }
 
+.booking{
+    font-weight: bold;
+    padding: 1rem;
+}
+
 .header ul{
     display: flex;
     list-style-type: none;
     margin: 0;
 
+}
+
+.logoul{
+    list-style-type: none;
 }
 
 .header ul a{

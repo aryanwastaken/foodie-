@@ -15,9 +15,18 @@ export default function Header() {
     return(
     <header className={classes.header}>
         <div className={classes.container}>
+            <ul className={classes.logoul}>
+            <li className={classes.menu_container}>
+            <div>
             <Link to="/" className={classes.logo}>
                 Foodie
             </Link>
+            <Link to="/table-booking" className={classes.booking}>
+                Foodie-reservations
+            </Link>
+            </div>
+            </li>
+            </ul>
             <nav>
                 <ul>
                     {
