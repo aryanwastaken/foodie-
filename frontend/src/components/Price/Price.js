@@ -15,5 +15,5 @@ export default function Price({price, locate, currency}) {
 
 Price.defaultProps = {
     locate: 'en-us',
-    currency: 'IND',
+    currency: 'INR',
 }
