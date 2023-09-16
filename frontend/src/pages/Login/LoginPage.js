@@ -6,6 +6,8 @@ import classes from './loginPage.module.css';
 import Title from '../../components/Title/Title';
 import Input from '../../components/Input/Input';
 import Button from '../../components/Button/Button';
+import { Link } from 'react-router-dom';
+
 export default function LoginPage() {
   const {
     handleSubmit,
@@ -56,6 +58,13 @@ export default function LoginPage() {
           />
 
           <Button type="submit" text="Login" />
+
+          <div className={classes.register}>
+            New User? &nbsp;
+            <Link to={`/register${returnUrl ? '?returnUrl=' + returnUrl : ' '}`}>
+              Register here
+            </Link>
+          </div>
         </form>
       </div>
     </div>
