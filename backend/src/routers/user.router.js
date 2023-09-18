@@ -7,6 +7,7 @@ import handler from 'express-async-handler';
 import { UserModel } from '../models/user.model.js';
 import bcrypt from 'bcryptjs';
 const PASSWORD_HASH_SALT_ROUNDS = 10;
+const JWT_SECRET = "dskfhkskhskfsjkhfshf38834042r9rewh";
 
 
 router.post(
@@ -60,7 +61,7 @@ const generateTokenResponse = user => {
       email: user.email,
       isAdmin: user.isAdmin,
     },
-    process.env.JWT_SECRET,
+    JWT_SECRET,
     {
       expiresIn: '30d',
     }
